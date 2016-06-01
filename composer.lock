@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a089bed1a0ace88d4230d90d1f542a28",
-    "content-hash": "4f748b1fa253b489361700a5c11bd12e",
+    "hash": "902adc11532919c92ff562160846b3f5",
+    "content-hash": "3759f614499badec00d13f22851b96a7",
     "packages": [
         {
             "name": "robotdance/php-arguments",

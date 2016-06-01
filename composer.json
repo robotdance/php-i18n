@@ -1,5 +1,5 @@
 {
-  "name": "robotdance/i18n",
+  "name": "robotdance/php-i18n",
   "type": "library",
   "description": "Simple I18N library for PHP",
   "keywords": ["php", "i18n", "library"],
