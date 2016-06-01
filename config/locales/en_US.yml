@@ -1,0 +1,4 @@
+en_US:
+  test_message: Test message
+  another_test_message: Another test message
+  hello_user: "Hello %{user}"

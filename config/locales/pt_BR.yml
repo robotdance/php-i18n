@@ -1,0 +1,4 @@
+pt_BR:
+  test_message: Mensagem de teste
+  another_test_message: Outra mensagem de teste
+  hello_user: "Olá %{user}"
