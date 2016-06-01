@@ -13,6 +13,9 @@ use robotdance\Arguments;
  */
 abstract class I18n
 {
+    const YAML_WORD_SEPARATOR = '_';
+    const LOCALES_PATH = './config/locales';
+
     /**
      * Returns a message according to locale
      * @param $key String Name of the key in I18n YAML file
@@ -26,12 +29,12 @@ abstract class I18n
         if ($locale === null) {
             $locale = self::getLocale();
         }
-        $yml = yaml_parse_file("./config/locales/$locale.yml");
+        $yml = yaml_parse_file(self::LOCALES_PATH . "/$locale.yml");
         if (array_key_exists($locale, $yml) && array_key_exists($key, $yml[$locale])) {
             $message = $yml[$locale][$key];
             $value = self::injectArguments($message, $args);
         } else {
-            $value = strtr($key, ["_" => " "]);
+            $value = strtr($key, [self::YAML_WORD_SEPARATOR => " "]);
         }
         return $value;
     }

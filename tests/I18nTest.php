@@ -62,4 +62,12 @@ class I18nTest extends \PHPUnit_Framework_TestCase
         $locale = I18n::getLocale();
         $this->assertEquals($locale, "pt_BR");
     }
+
+    /**
+     * Test alias method
+     */
+    public function testAlias(){
+        $value = I18n::translate('test_message');
+        $this->assertNotEmpty($value);
+    }
 }
