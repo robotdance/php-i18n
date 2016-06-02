@@ -6,9 +6,12 @@ use robotdance\Config;
 
 class ConfigTest extends \PHPUnit_Framework_TestCase
 {
+    const CONFIG_PATH = './config/config.yml';
+
     public function setUp()
     {
         putenv('ENVIRONMENT=development');
+        Config::setConfigFile(self::CONFIG_PATH);
     }
 
     public function tearDown()
@@ -30,7 +33,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetConfigFileReturnSame()
     {
-        $path = './config/config.yml';
+        $path = self::CONFIG_PATH;
         $this->assertEquals(Config::setConfigFile($path), $path);
     }
 
@@ -58,7 +61,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetEnvMustTrowExceptionWhenThereIsNoKey()
     {
-        Config::get('opus_json_urlXXX');
+        Config::get('some_setting_xxx');
     }
 
     /**
@@ -68,7 +71,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
     public function testGetEnvMustTrowExceptionWhenThereIsNoEnvironment()
     {
         putenv('ENVIRONMENT'); // = unset
-        Config::get('opus_json_url');
+        Config::get('some_setting');
     }
 
 
@@ -77,7 +80,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetReturnValid()
     {
-        $url = Config::get('opus_json_url');
+        $url = Config::get('some_setting');
         $this->assertNotEmpty($url);
     }
 }

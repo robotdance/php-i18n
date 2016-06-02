@@ -1,11 +1,11 @@
 default_locale: pt_BR
 
-opus_json_url:
-  development: http://odin.capesesp.net/openbase/opus_json.php
-  test: http://odin.capesesp.net/openbase/opus_json.php
-  production: http://zeus.capesesp.net/openbase/opus_json.php
+some_setting:
+  development: some setting development
+  test: some setting test
+  production: some setting production
 
 upload_folder:
   development: /tmp
-  test: /fsa1/ftparea/site_upload_file
-  production: /fsa1/ftparea/site_upload_file
+  test: /tmp
+  production: /tmp

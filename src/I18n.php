@@ -13,7 +13,10 @@ use robotdance\Arguments;
  */
 abstract class I18n
 {
+    /** word separator for yaml keys */
     const YAML_WORD_SEPARATOR = '_';
+
+    /** locales path (relative to client app root directory) */
     const LOCALES_PATH = './config/locales';
 
     /**
