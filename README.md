@@ -12,6 +12,27 @@ PHP-I18n uses [Composer](http://getcomposer.org) as dependency management tool.
 
 `$ composer install`
 
+## Use
+
+Create a folder called `config/locales` at your app/module, and put your locale YAML files there.
+(an example of valid YAML file can found in the source). Then call `I18n::t`, in one of the ways below.
+
+### Simple key/value lookup
+```php
+$translated = I18n::t('example_message');
+```
+
+### Locale override
+```php
+$translated = I18n::t('example_message', [], 'pt_BR');
+```
+
+### Injecting arguments
+```php
+$translated = I18n::t('hello_message', ['user' => 'Bob']); // 'Hello Bob'
+```
+**Note about formatting** currently the library does not apply formatting to arguments.
+
 ## Running tests
 
 `$ ./bin/phpunit`
