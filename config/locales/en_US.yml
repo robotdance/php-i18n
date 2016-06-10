@@ -2,3 +2,24 @@ en_US:
   test_message: Test message
   another_test_message: Another test message
   hello_user: "Hello %{user}"
+
+  l10n:
+    boolean:
+      truthy: 'True'
+      falsy: 'False'
+    number:
+      precision: 3
+      delimiter: '.'
+      separator: ','
+    array:
+      conjunction: ! ' and '
+      pause: ! ', '
+    datetime:
+      formats:
+        default: ! '%a, %d de %B de %Y, %H:%M:%S %z'
+        long: ! '%d de %B de %Y, %H:%M'
+        short: ! '%d %b %H:%M'
+        only_date: ! '%d de %B'
+        hour_minute: ! '%H:%M'
+        day_month: ! '%d/%m'
+        month_year: ! '%m/%Y'

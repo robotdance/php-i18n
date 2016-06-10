@@ -4,7 +4,7 @@
 [![Test Coverage](https://codeclimate.com/github/robotdance/php-i18n/badges/coverage.svg)](https://codeclimate.com/github/robotdance/php-i18n/coverage)
 [![Issue Count](https://codeclimate.com/github/robotdance/php-i18n/badges/issue_count.svg)](https://codeclimate.com/github/robotdance/php-i18n)
 
-PHP-I18n is a simple I18N library.
+PHP-I18n is a simple I18N and L10n library.
 
 ## Setup
 
@@ -32,6 +32,15 @@ $translated = I18n::t('example_message', [], 'pt_BR');
 $translated = I18n::t('hello_message', ['user' => 'Bob']); // 'Hello Bob'
 ```
 **Note about formatting** currently the library does not apply formatting to arguments.
+
+### Localisation
+
+Create a section 'l10n' on your locale file and follow the source standards.
+
+```
+$value = I18n::l(true);    // 'verdadeiro'
+$value = I18n::l(123.45); // '123,45'
+```
 
 ## Running tests
 
