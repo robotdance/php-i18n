@@ -54,9 +54,11 @@ class I18nTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($locale, "pt_BR");
     }
 
-    public function testAlias(){
+    public function testAliases(){
         $value = I18n::translate('test_message');
         $this->assertNotEmpty($value);
+        $value = I18n::localize(true);
+        $this->assertEquals("True", $value);
     }
 
     public function testToAssociativeSyntax()
