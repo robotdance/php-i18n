@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "94ac29a0cc00ee4bca07b6e5d39ee8fd",
-    "content-hash": "5bcfffaeeeafcaeed616e04579087462",
+    "hash": "f94dd0c476bc36345aae7c04df7eb1ed",
+    "content-hash": "fff0e89d33319f3576514b0de8e8d572",
     "packages": [
         {
             "name": "robotdance/php-app-config",
-            "version": "dev-master",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robotdance/php-app-config.git",
@@ -59,7 +59,7 @@
         },
         {
             "name": "robotdance/php-arguments",
-            "version": "dev-master",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robotdance/php-arguments.git",
@@ -110,21 +110,21 @@
         },
         {
             "name": "robotdance/php-console",
-            "version": "dev-master",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robotdance/php-console.git",
-                "reference": "e07afb4978214a4277da12a4a841f08c46ac3aa5"
+                "reference": "b0cba148c1b5be3c31eebaf58fbc977da57bb72c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robotdance/php-console/zipball/e07afb4978214a4277da12a4a841f08c46ac3aa5",
-                "reference": "e07afb4978214a4277da12a4a841f08c46ac3aa5",
+                "url": "https://api.github.com/repos/robotdance/php-console/zipball/b0cba148c1b5be3c31eebaf58fbc977da57bb72c",
+                "reference": "b0cba148c1b5be3c31eebaf58fbc977da57bb72c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "robotdance/php-arguments": "dev-master"
+                "robotdance/php-arguments": "0.0.4"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
@@ -158,7 +158,7 @@
                 "php",
                 "utilities"
             ],
-            "time": "2016-06-10 18:35:10"
+            "time": "2016-06-06 14:00:47"
         }
     ],
     "packages-dev": [
@@ -3931,9 +3931,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "robotdance/php-app-config": 20,
-        "robotdance/php-arguments": 20,
-        "robotdance/php-console": 20,
         "codeclimate/php-test-reporter": 20
     },
     "prefer-stable": false,
