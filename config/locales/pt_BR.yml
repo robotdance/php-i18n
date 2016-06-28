@@ -12,14 +12,14 @@ pt_BR:
       delimiter: ','
       separator: '.'
     array:
-      conjunction: ! ' e '
-      pause: ! ', '
+      conjunction: ' e '
+      pause: ', '
     datetime:
       formats:
-        default: ! '%a, %d de %B de %Y, %H:%M:%S %z'
-        long: ! '%d de %B de %Y, %H:%M'
-        short: ! '%d %b %H:%M'
-        only_date: ! '%d de %B'
-        hour_minute: ! '%H:%M'
-        day_month: ! '%d/%m'
-        month_year: ! '%m/%Y'
+        default: '%a, %d de %B de %Y, %H:%M:%S %z'
+        long: '%d de %B de %Y, %H:%M'
+        short: '%d %b %H:%M'
+        only_date: '%d de %B'
+        hour_minute: '%H:%M'
+        day_month: '%d/%m'
+        month_year: '%m/%Y'
