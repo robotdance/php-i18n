@@ -7,6 +7,7 @@ namespace robotdance;
 
 use robotdance\Config;
 use robotdance\Arguments;
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * Simple I18n class for string messages
@@ -32,7 +33,7 @@ abstract class I18n
         if ($locale === null) {
             $locale = self::getLocale();
         }
-        $yml = yaml_parse_file(self::LOCALES_PATH . "/$locale.yml");
+        $yml = Yaml::parse(file_get_contents(self::LOCALES_PATH . "/$locale.yml"));
         $defaultMessage = strtr($key, [self::YAML_WORD_SEPARATOR => " "]);
         $message = self::traverse($yml, "$locale.$key", $defaultMessage);
         $injectedMessage = self::injectArguments($message, $args);

@@ -4,26 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d16faa3b2e947dee519ccd477db3faf9",
-    "content-hash": "36cf38bd0721bae494837005aba1a275",
+    "hash": "a43044fde29b5aec3a566f989dced72d",
+    "content-hash": "1ac98c57a545a55e74bac7f98f4c6364",
     "packages": [
         {
             "name": "robotdance/php-app-config",
-            "version": "v0.0.8",
+            "version": "v0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robotdance/php-app-config.git",
-                "reference": "61dfa164888423abf0f8325462d9b52b47e52449"
+                "reference": "2ebb0db5fc0166bc1f31f75329c778d9eaac56b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robotdance/php-app-config/zipball/61dfa164888423abf0f8325462d9b52b47e52449",
-                "reference": "61dfa164888423abf0f8325462d9b52b47e52449",
+                "url": "https://api.github.com/repos/robotdance/php-app-config/zipball/2ebb0db5fc0166bc1f31f75329c778d9eaac56b9",
+                "reference": "2ebb0db5fc0166bc1f31f75329c778d9eaac56b9",
                 "shasum": ""
             },
             "require": {
-                "ext-yaml": "*",
-                "php": ">=5.3.2"
+                "php": ">=5.3.2",
+                "symfony/yaml": "~3.1"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
@@ -56,7 +56,7 @@
                 "yaml",
                 "yml"
             ],
-            "time": "2016-06-20 18:30:46"
+            "time": "2016-06-28 14:30:58"
         },
         {
             "name": "robotdance/php-arguments",
@@ -108,6 +108,55 @@
                 "validation"
             ],
             "time": "2016-06-01 16:45:23"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5a7e7fc273c758b92b85dcb9c46149ccda89623",
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-06-14 11:18:07"
         }
     ],
     "packages-dev": [
@@ -3065,55 +3114,6 @@
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
             "time": "2016-04-14 08:48:44"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v3.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5a7e7fc273c758b92b85dcb9c46149ccda89623",
-                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2016-06-14 11:18:07"
         },
         {
             "name": "twig/twig",
