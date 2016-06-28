@@ -3,6 +3,7 @@
 [![Code Climate](https://codeclimate.com/github/robotdance/php-i18n/badges/gpa.svg)](https://codeclimate.com/github/robotdance/php-i18n)
 [![Test Coverage](https://codeclimate.com/github/robotdance/php-i18n/badges/coverage.svg)](https://codeclimate.com/github/robotdance/php-i18n/coverage)
 [![Issue Count](https://codeclimate.com/github/robotdance/php-i18n/badges/issue_count.svg)](https://codeclimate.com/github/robotdance/php-i18n)
+[![Travis build](https://travis-ci.org/robotdance/php-i18n.svg?branch=master)](https://travis-ci.org/robotdance/php-i18n.svg?branch=master)
 
 PHP-I18n is a simple I18N and L10n library.
 
